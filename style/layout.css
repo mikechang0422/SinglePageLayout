@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+html {
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Raleway', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background: #151515 url("../images/colorful-sunset-reflected-in-textured-beach-sand.jpg") no-repeat fixed left bottom;
+  background-size: cover;
+}
+/*# sourceMappingURL=layout.css.map */
