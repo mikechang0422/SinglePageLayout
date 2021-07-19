@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hent-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -9,12 +10,72 @@
     <link rel="stylesheet" href="style/style.css">
     <title>SinglePageLayout</title>
 </head>
+
 <body>
-    <header class="header"></header>
-    <section class="about"></section>
-    <section class="works"></section>
-    <section class="contact"></section>
+    <header class="header">
+        <p class="site-title-sub">Single-Page-Layout</p>
+        <h1 class="site-title">HI MY NAME IS ...</h1>
+        <p class="site-description">Check out something of my works</p>
+        <div class="buttons">
+            <a href="#about" class="button">Learn More</a>
+            <a href="#contant" class="button button-showy">Send Message</a>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h2 class="heading">About Me</h2>
+            <p class="about-text">您好，我的名字叫MIKE，目前正在努力學習前端技能，期待未來能成為一個專業的前端工程或設計師。</p>
+            <p class="about-text">這是我練習<code>HTML</code>&<code>SCSS</code>所做出的作品，主要是想練習不一樣的設計增加自己對前端的視野。希望未來進入公司後能馬上擁有即戰力且快速融入團隊，一邊工作一邊學習更多的設計技巧!</p>
+        </section>
+        <section class="works">
+            <h2 class="heading">Works</h2>
+            <div class="works-wrapper">
+                <div class="work-box case1">
+                    <img src="./images/snowy-mountains-reflect-in-water-at-sunrise.jpg" alt="case1" class="work-img">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-txt">The First Practice!<br>
+                                How Do I Work It!<br>
+                                Use Tool:<code>HTML</code> <code>SCSS</code> & <code>GIT</code><br><a href="#" class="button button-ghost">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-box case2">
+                    <img src="./images/sunrise-glaring-through-the-trees-as-man-takes-to-water.jpg" alt="case1" class="work-img">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-txt">The Second Practice!<br>
+                                How Do I Work It!<br>
+                                Use Tool:<code>HTML</code> <code>SCSS</code> & <code>GIT</code><br><a href="#" class="button button-ghost">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-box case3">
+                    <img src="./images/sunrise-over-barcelona-beach.jpg" alt="case1" class="work-img">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-txt">The Third Practice!<br>
+                                How Do I Work It!<br>
+                                Use Tool:<code>HTML</code> <code>SCSS</code> & <code>GIT</code><br><a href="#" class="button button-ghost">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-box case4">
+                    <img src="./images/sunrise-over-island.jpg" alt="case1" class="work-img">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-txt">The Fourth Practice!<br>
+                                How Do I Work It!<br>
+                                Use Tool:<code>HTML</code> <code>SCSS</code> & <code>GIT</code><br><a href="#" class="button button-ghost">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contant"></section>
+    </main>
     <footer class="footer"></footer>
     <script src="./js/style.js"></script>
 </body>
+
 </html>

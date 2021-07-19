@@ -1,0 +1,48 @@
+.header {
+  padding: 170px 30px 80px;
+}
+
+.header .site-title-sub {
+  margin: 0  0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.header .site-title-sub::before,
+.header .site-title-sub::after {
+  display: inline-block;
+  margin: 0 30px;
+  width: 140px;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  vertical-align: middle;
+}
+
+.header .site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6em;
+}
+
+.header .site-description {
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.header .button,
+.header .button-showy {
+  display: inline-block;
+  padding: 20px;
+  width: 200px;
+  color: #fff;
+  background-color: rgba(175, 165, 141, 0.7);
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-style: 1.2rem;
+}
+
+.header .button-showy {
+  background-color: rgba(241, 180, 0, 0.7);
+}
+/*# sourceMappingURL=header.css.map */

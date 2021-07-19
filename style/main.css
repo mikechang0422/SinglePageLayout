@@ -1,0 +1,151 @@
+.about {
+  padding: 80px 30px;
+  color: #333;
+  background-color: #ccc;
+}
+
+.about .heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin: 30px 0 15px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.about .heading::before,
+.about .heading::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border-bottom: 1px solid #333;
+}
+
+.about .heading::before {
+  bottom: 5px;
+}
+
+.about .about-text {
+  margin: 10px 0;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+
+.works {
+  padding: 80px 0;
+  background-color: #383634;
+}
+
+.works-wrapper {
+  display: table;
+  margin-top: 60px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+
+.work-box .work-img {
+  display: block;
+  margin: 0 0 60%;
+  width: 100%;
+}
+
+.work-box .button {
+  display: inline-block;
+  padding: 20px;
+  width: 200px;
+  color: #fff;
+  background-color: rgba(175, 165, 141, 0.7);
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-style: 1.2rem;
+}
+
+.work-box .work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  overflow-y: auto;
+  width: 100%;
+  height: 50%;
+}
+
+.work-box .work-description-inner {
+  display: table;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.work-box .work-description-inner .work-txt {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.work-box .work-description-inner .work-txt .button {
+  padding: 3px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.work-box .work-description-inner .work-txt .button-ghost {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #fff;
+}
+
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  opacity: 0.2;
+}
+
+.work-box.case1::after {
+  background: url("../images/snowy-mountains-reflect-in-water-at-sunrise.jpg");
+  background-size: 100% 100%;
+}
+
+.work-box.case2::after {
+  background: url("../images/sunrise-glaring-through-the-trees-as-man-takes-to-water.jpg");
+  background-size: 100% 100%;
+}
+
+.work-box.case3::after {
+  background: url("../images/sunrise-over-barcelona-beach.jpg");
+  background-size: 100% 100%;
+}
+
+.work-box.case4::after {
+  background: url("../images/sunrise-over-island.jpg");
+  background-size: 100% 100%;
+}
+
+.work-box:nth-child(odd) .work-img {
+  margin: 60% 0 0;
+}
+
+.work-box:nth-child(odd) .work-description {
+  top: 0;
+}
+
+.work-box:nth-child(odd)::after {
+  top: 0;
+}
+/*# sourceMappingURL=main.css.map */

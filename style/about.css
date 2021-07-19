@@ -1,0 +1,36 @@
+.about {
+  padding: 80px 30px;
+  color: #333;
+  background-color: #fff;
+}
+
+.about .heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin: 30px 0 15px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.about .heading::before,
+.about .heading::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border-bottom: 1px solid #999;
+}
+
+.about .heading::before {
+  bottom: 5px;
+}
+
+.about .about-text {
+  margin: 10px 0;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=about.css.map */
