@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="MikeChang">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <p class="site-title-sub">Single-Page-Layout</p>
-        <h1 class="site-title">HI MY NAME IS ...</h1>
+        <h1 class="site-title">HI! I AM MIKE</h1>
         <p class="site-description">Check out something of my works</p>
         <div class="buttons">
             <a href="#about" class="button">Learn More</a>
@@ -72,9 +72,45 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contant"></section>
+        <section class="skills">
+            <h2 class="heading">My Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skill-box">
+                    <i class="skill-icon fas fa-lightbulb"></i>
+                    <div class="skill-title">IDEA</div>
+                    <p class="skill-txt">
+                        我喜歡思考，喜歡設計，喜歡學習並使用新的事物。<br>
+                        當過主管，對於抗壓跟管理也有一定的能力。<br>
+                        對前端充滿了滿滿的興趣跟樂趣!</p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fas fa-pencil-ruler"></i>
+                    <div class="skill-title">Design</div>
+                    <p class="skill-txt">
+                        喜歡對稱類型的設計，也喜歡簡約俐落的設計。<br>
+                        覺得設計時應要考慮到使用者的使用情況。<br>
+                        給使用者一個美觀又方便的設計!</p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fas fa-code"></i>
+                    <div class="skill-title">Coding</div>
+                    <p class="skill-txt">
+                        Code方面，目前採用<code>HTML</code> & <code>SCSS</code> 編寫 <code>CSS</code><br>
+                        使用正確的TAG，層遞式寫法。<br>
+                        並讓CODE有維護性。</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contant">
+            <h2 class="heading">Contact</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Name">
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">copyright &copy; Single-Page-Layout</footer>
     <script src="./js/style.js"></script>
 </body>
 

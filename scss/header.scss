@@ -1,10 +1,14 @@
 .header {
-  padding: 170px 30px 80px;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  flex-direction: column;
+  height: 100vh;
 
   .site-title-sub {
     margin: 0  0 30px;
-    letter-spacing: 1px;
     font-size: 2.2rem;
+    letter-spacing: 1px;
   }
 
   .site-title-sub::before,
@@ -33,15 +37,64 @@
   .button-showy {
     display: inline-block;
     padding: 20px;
+    margin-bottom: 30px;
     width: 200px;
     color: #fff;
     background-color: rgba(175, 165, 141, 0.7);
     border-radius: 4px;
     letter-spacing: 1px;
-    font-style: 1.2rem;
+    font-style: 1.5rem;
   }
 
   .button-showy {
     background-color: rgba(241, 180, 0, 0.7);
+  }
+
+  .button:hover {
+    background-color: rgb(175, 165, 141);
+    opacity: 1;
+  }
+
+  .button-showy:hover {
+    background-color: rgb(241, 180, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .site-title-sub {
+      font-size: 2rem;
+    }
+
+    .site-title-sub::before,
+    .site-title-sub::after {
+      margin: 0 15px;
+      width: 80px;
+    }
+
+    .site-title {
+      margin-top: 40px;
+      font-size: 6.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    .site-title-sub {
+      font-size: 1.7rem;
+    }
+
+    .site-title-sub::before,
+    .site-title-sub::after {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+    }
+
+    .site-title {
+      margin-top: 30px;
+      font-size: 5rem;
+    }
   }
 }
